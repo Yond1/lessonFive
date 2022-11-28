@@ -12,7 +12,6 @@ export const Card = ({ children, ...rest }) => {
         <p>{paragraph}</p>
         <button className="card-button">{namebth}</button>
       </div>
-
     </div>
   )
 }
