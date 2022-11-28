@@ -1,0 +1,1 @@
+export { NewsBlock as default } from "./NewsBlock";

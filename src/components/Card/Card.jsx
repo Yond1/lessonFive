@@ -1,9 +1,7 @@
 import React from 'react'
 
 export const Card = ({ children, ...rest }) => {
-
   const child = children ? children : null
-
   const { title, namebth, paragraph } = rest
 
   return (

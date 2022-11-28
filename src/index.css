@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main-color: #3a62cf;
+}
+
 /* Layout */
 .layout-wrapper {
   width: 100%;
@@ -11,12 +15,10 @@
 }
 .layout {
   width: 100%;
-  padding: 60px;
+  padding: 20px 200px;
   min-height: inherit;
 
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   gap: 40px;
 }
@@ -52,4 +54,130 @@
   width: inherit;
   height: inherit;
   object-fit: cover;
+}
+
+/* Task 2 Yandex */
+
+/* Newsblock */
+.news-wrapper {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+}
+.news-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.news-menu span {
+  color: var(--main-color);
+  cursor: pointer;
+}
+.news-items {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.news-course {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  gap: 30px;
+}
+
+/* Searchblock */
+
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.search-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 18px;
+}
+.search-menu a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.search-input {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+  align-items: center;
+}
+.logo {
+  position: absolute;
+  left: -100px;
+}
+.search-input div {
+  width: inherit;
+  display: flex;
+  align-items: center;
+}
+.search-input div input {
+  width: 80%;
+  height: 40px;
+  border: 4px solid rgb(255, 208, 54);
+  outline: none;
+  padding: 0 20px;
+}
+.search-input input:focus {
+  border: 4px solid rgb(255, 166, 0);
+}
+.search-input button {
+  background: rgb(255, 208, 54);
+  border: none;
+  width: 60px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.search-example span {
+  opacity: 0.5;
+}
+
+/* Banner block */
+
+.banner {
+  width: 100%;
+  height: 80px;
+}
+.banner a img {
+  width: 80%;
+  height: 100%;
+}
+
+/* Other Block */
+
+.other-block-wrapper {
+  margin-top: 40px;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.other-block-content-wrapper {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.other-block-content-title {
+  font-size: 24px;
+  color: var(--main-color);
+  cursor: pointer;
 }
